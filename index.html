@@ -1,16 +1,664 @@
-<html>
-  <head>
-    <title> Haroon Ali Shah - Resume site</title>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="/registration/">-->
+    <base href=".">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Haroon Ali Shah - Resume</title>
+    <link rel="icon" type="image/x-icon"
+        href="">
+    <link rel="stylesheet" href="./assest/styles.css">
+    <style></style>
     <style>
-      body {
-        background-color:#efefef;
-      }
+        [_ngcontent-nxs-c185]:root {
+            --primary: #baa86b;
+            --primary-darken: #9c8949;
+            --primary-button-text-color: #fff;
+            --header-cart-item: #000
+        }
+
+        .header[_ngcontent-nxs-c185] {
+            padding: 15px 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            background-color: #fff
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] {
+            display: flex;
+            align-items: center
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .header-cart[_ngcontent-nxs-c185] {
+            flex: 1;
+            position: relative;
+            text-align: right;
+            margin-right: 15px
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .header-cart[_ngcontent-nxs-c185] .count[_ngcontent-nxs-c185] {
+            text-align: center;
+            padding-top: 2px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 5px;
+            right: 1px;
+            color: var(--header-cart-item);
+            font-weight: 600;
+            font-size: .7em
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .fa[_ngcontent-nxs-c185] {
+            font-size: 2.2em;
+            vertical-align: middle
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .signed-in-user[_ngcontent-nxs-c185] {
+            margin-left: 10px
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .signed-in-user[_ngcontent-nxs-c185] span[_ngcontent-nxs-c185] {
+            color: #000;
+            margin-left: 10px;
+            font-size: 1em;
+            font-weight: 500
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .signed-in-user[_ngcontent-nxs-c185] .fa[_ngcontent-nxs-c185] {
+            font-size: 2em
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .account-link[_ngcontent-nxs-c185] a[_ngcontent-nxs-c185] {
+            font-size: 1em;
+            margin: 0 5px
+        }
+
+        .header-menu-items[_ngcontent-nxs-c185] .dropdown-toggle[_ngcontent-nxs-c185]:after {
+            display: none
+        }
     </style>
-  </head>
-  <body>
+    <style>
+        [_ngcontent-nxs-c186]:root {
+            --primary: #baa86b;
+            --primary-darken: #9c8949;
+            --primary-button-text-color: #fff;
+            --header-cart-item: #000
+        }
 
-    <center><h1>Coming soon ...</h1></center>
+        .footer[_ngcontent-nxs-c186] {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #fafafa;
+            font-size: .9em;
+            font-weight: 400
+        }
 
-  </body>
+        .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] {
+            padding-top: 20px
+        }
+
+        .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] .copyright[_ngcontent-nxs-c186] .col-12[_ngcontent-nxs-c186],
+        .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] .copyright[_ngcontent-nxs-c186] .col-12[_ngcontent-nxs-c186]:last-child {
+            text-align: right
+        }
+
+        .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] .copyright[_ngcontent-nxs-c186] .col-12[_ngcontent-nxs-c186]:last-child a[_ngcontent-nxs-c186] {
+            margin-right: 20px
+        }
+
+        .footer[_ngcontent-nxs-c186] .payment-options[_ngcontent-nxs-c186] {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start
+        }
+
+        .footer[_ngcontent-nxs-c186] .payment-options[_ngcontent-nxs-c186] .filler[_ngcontent-nxs-c186] {
+            flex: 1
+        }
+
+        .footer[_ngcontent-nxs-c186] .payment-options[_ngcontent-nxs-c186] span[_ngcontent-nxs-c186]:first-child {
+            margin-right: 20px
+        }
+
+        .footer[_ngcontent-nxs-c186] .payment-options[_ngcontent-nxs-c186] .fa[_ngcontent-nxs-c186] {
+            font-size: 1.8em;
+            color: #777;
+            margin-right: 10px
+        }
+
+        @media (max-width:720px) {
+
+            .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] .copyright[_ngcontent-nxs-c186] .col-12[_ngcontent-nxs-c186],
+            .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] .copyright[_ngcontent-nxs-c186] .col-12[_ngcontent-nxs-c186]:last-child {
+                text-align: center
+            }
+
+            .footer[_ngcontent-nxs-c186] .container[_ngcontent-nxs-c186] .copyright[_ngcontent-nxs-c186] .col-12[_ngcontent-nxs-c186]:last-child a[_ngcontent-nxs-c186] {
+                margin-right: 20px
+            }
+
+            .footer[_ngcontent-nxs-c186] .payment-options-wrapper[_ngcontent-nxs-c186] {
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+        }
+    </style>
+    <style>
+        .overlay[_ngcontent-nxs-c187] {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(74, 74, 74, .8);
+            z-index: 99999
+        }
+
+        .spinner[_ngcontent-nxs-c187] {
+            position: absolute;
+            top: 50%;
+            left: 50%
+        }
+    </style>
+    <style>
+        ol[_ngcontent-nxs-c71]>li[_ngcontent-nxs-c71],
+        ul[_ngcontent-nxs-c71]>li[_ngcontent-nxs-c71] {
+            margin-bottom: .1rem
+        }
+    </style>
+    <style>
+        [_ngcontent-nxs-c70]:root {
+            --primary: #baa86b;
+            --primary-darken: #9c8949;
+            --primary-button-text-color: #fff;
+            --header-cart-item: #000
+        }
+
+        #cookieConsent[_ngcontent-nxs-c70] {
+            background-color: rgba(20, 20, 20, .8);
+            min-height: 26px;
+            font-size: 14px;
+            color: #ccc;
+            line-height: 26px;
+            padding: 8px 0 8px 30px;
+            font-family: futura-pt, sans-serif;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999
+        }
+
+        #cookieConsent[_ngcontent-nxs-c70] a[_ngcontent-nxs-c70] {
+            color: #4b8ee7;
+            text-decoration: none
+        }
+
+        #closeCookieConsent[_ngcontent-nxs-c70] {
+            float: right;
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            font-weight: 700
+        }
+
+        #closeCookieConsent[_ngcontent-nxs-c70]:hover {
+            color: #fff
+        }
+
+        #cookieConsent[_ngcontent-nxs-c70] a.cookieConsentOK[_ngcontent-nxs-c70] {
+            background-color: var(--primary);
+            color: #fff;
+            border-radius: 5px;
+            padding: 0 20px;
+            cursor: pointer;
+            float: right;
+            margin: 0 60px 0 10px;
+            font-family: futura-pt, sans-serif
+        }
+
+        #cookieConsent[_ngcontent-nxs-c70] a.cookieConsentOK[_ngcontent-nxs-c70]:hover {
+            background-color: var(--primary)
+        }
+    </style>
+    <style>
+        [_ngcontent-nxs-c67]:root {
+            --primary: #baa86b;
+            --primary-darken: #9c8949;
+            --primary-button-text-color: #fff;
+            --header-cart-item: #000
+        }
+
+        .modal-body[_ngcontent-nxs-c67] a[_ngcontent-nxs-c67]:hover {
+            cursor: pointer;
+            color: var(--primary);
+            text-decoration: underline
+        }
+    </style>
+    <style>
+        .marketAdLink[_ngcontent-nxs-c125] {
+            cursor: none;
+            pointer-events: none
+        }
+
+        .marketAdImg[_ngcontent-nxs-c125] {
+            max-width: 100%
+        }
+
+        .links[_ngcontent-nxs-c125] {
+            width: 60%
+        }
+
+        .links[_ngcontent-nxs-c125] a[_ngcontent-nxs-c125] {
+            display: block;
+            margin-bottom: .5rem
+        }
+
+        .upcoming-test[_ngcontent-nxs-c125] {
+            margin-bottom: 30px
+        }
+
+        .heading-row[_ngcontent-nxs-c125] {
+            margin-bottom: 2rem
+        }
+
+        @media (max-width:720px) {
+            .links[_ngcontent-nxs-c125] {
+                width: 100%
+            }
+        }
+    </style>
+    <style>
+        [_ngcontent-nxs-c114]:root {
+            --primary: #baa86b;
+            --primary-darken: #9c8949;
+            --primary-button-text-color: #fff;
+            --header-cart-item: #000
+        }
+
+        .product-link[_ngcontent-nxs-c114] {
+            color: var(--primary)
+        }
+    </style>
+    <style>
+        .k[_ngcontent-nxs-c115] {
+            width: 100%;
+            overflow-x: hidden
+        }
+    </style>
+    <style>
+        .btn[_ngcontent-nxs-c124] {
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            padding: 6px 12px
+        }
+
+        .white-space-pre[_ngcontent-nxs-c124] {
+            white-space: pre
+        }
+    </style>
+    <style>
+        [_ngcontent-nxs-c121]:root {
+            --primary: #baa86b;
+            --primary-darken: #9c8949;
+            --primary-button-text-color: #fff;
+            --header-cart-item: #000
+        }
+
+        .btn[_ngcontent-nxs-c121] {
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 400;
+            vertical-align: middle;
+            cursor: pointer;
+            border-color: #ccc;
+            padding: 6px 12px;
+            background-color: #fff
+        }
+
+        .btn[_ngcontent-nxs-c121]:hover {
+            background-color: #f4f4f4
+        }
+
+        a[_ngcontent-nxs-c121] {
+            color: #000
+        }
+
+        a[_ngcontent-nxs-c121]:hover {
+            color: var(--primary-darken);
+            text-decoration: none
+        }
+        .dashed-border {
+            border: 1px dashed;
+        }
+    </style>
+</head>
+
+<body class="celpip">
+    <app-root _nghost-nxs-c188="" ng-version="11.2.13">
+        <app-header _ngcontent-nxs-c188="" _nghost-nxs-c185="">
+            <header _ngcontent-nxs-c185="" class="header">
+                <div _ngcontent-nxs-c185="" class="container">
+                    <div _ngcontent-nxs-c185="" class="row align-items-center">
+                        <div _ngcontent-nxs-c185="" class="col-5 col-md-3">
+                            <a _ngcontent-nxs-c185=""
+                                href="https://jharoonalishah.github.io/">
+                                <h2>Haroon Ali Shah</h2></a>
+                        </div>
+                        <div _ngcontent-nxs-c185="" class="col-7 col-md-9 header-menu-items">
+                            <div> 
+                                16 years of Software development experience | Cloud certified | JVM developer | Scrum master
+                                <div>jharoonalishah@gmail.com | Tokyo, Japan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </app-header>
+
+
+        <main _ngcontent-nxs-c188="" role="main">
+            <div _ngcontent-nxs-c188="" class="container">
+                <router-outlet _ngcontent-nxs-c188=""></router-outlet>
+                <app-my-account _nghost-nxs-c125="" class="ng-star-inserted">
+                    <app-page-title _ngcontent-nxs-c125="" _nghost-nxs-c65="">
+                        <div _ngcontent-nxs-c65="" class="row dashed-border">
+                            <div _ngcontent-nxs-c65="" class="col-md-12 my-3">
+                                <h4 _ngcontent-nxs-c65="">About</h4>
+                            </div>
+                        </div>
+                    </app-page-title>
+                    <div _ngcontent-nxs-c125="" class="ng-star-inserted">
+                        <div _ngcontent-nxs-c125="" class="row heading-row">
+                            <div _ngcontent-nxs-c125="" class="col-lg-8">
+                                <p>
+                                    Software development experience across various industries such as <em>financial insurance, 
+                                    affiliation systems, cashback systems, membership programs and payment platform systems</em>.
+                                    Up to date knowledge of technologies, fond of Deep learning and a passion for functional programming and microservices.
+                                </p>
+                        </div>
+                    </div>
+
+                    <app-page-title _ngcontent-nxs-c125="" _nghost-nxs-c65="">
+                        <div _ngcontent-nxs-c65="" class="row dashed-border">
+                            <div _ngcontent-nxs-c65="" class="col-md-12 my-3">
+                                <h4 _ngcontent-nxs-c65="">Experience</h4>
+                            </div>
+                        </div>
+                    </app-page-title>
+                    <div _ngcontent-nxs-c125="" class="ng-star-inserted">
+                        <div _ngcontent-nxs-c125="" class="row heading-row">
+                            <div _ngcontent-nxs-c125="" class="col-lg-8">
+                                <h6>Rakuten Group, Inc.</h6>
+                                <div><span>october, 2015 ... continue</span></div>
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Senior application engineer | Lead | Scrum master (Payment Gateway Team)</u></strong></div>
+                                </p>
+                                <p>
+                                    The current department is a Payment Gateway Platform, foreseeing the online payment ( credit card, PayPal, convenience stores etc ) for companies in Japan and Overseas. My role in the current department are two folds:
+                                    <ol>
+                                        <li>
+                                            1 As a Sr. Engineer: 
+                                            <ul>
+                                                <li>
+                                                    Participate in the whole development life cycles of integrating new payment services. 
+                                                    Mentor junior developers.
+                                                    Monitors the current system stability and respond to any error in the system.        
+                                                </li>
+                                                <li>
+                                                    Achievements:
+                                                    <ul>
+                                                        <li>                                                    
+                                                            A complete guidelines for on-boarding new members with trouble management. The trouble management is a complete on-boarding process, where new members and also existing members can go through with a series of steps in order to be fully equanted with trouble process and how to respond, including trouble findings and escalation. The trouble management includes following steps:
+                                                        </li>
+                                                        <li>Understand trouble and different trouble terminologies</li>
+                                                        <li>A real mimicking trouble drill to test the skill gained from step 1</li>
+                                                        <li>An external members tests the enrolled members trouble management skilled</li>
+                                                        <li>Final feedback to higher management regarding enrolled members performance.</li>
+                                                        <li>A unified trouble dashboard in Splunk. The unified dashboard lists all the important scenarios to quickly pin-point trouble in the system.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2. As a Scrum Master:
+                                                <ul>
+                                                    <li>
+                                                        1. Currently held Scrum master certification from Coursera.
+                                                    </li>
+                                                    Achievements:
+                                                    <ul>
+                                                        <li>Drive 8 members (3 members from India, 1 China and 4 in Japan) for follow Scrum methodologies.</li>
+                                                        <li>Successfully transition from non-scrum methodologies to Scrum methodology (Log refinements, Grooming, Retro, Planning)</li>
+                                                        <li>Improve the team velocity with more than 90% story points completion.</li>
+                                                        <li>Created a guidelines for the new on-boarding members.</li>
+                                                    </ul>
+                                                </ul>
+                                        </li>
+                                    </ol>
+                                </p>
+                                <!-- membership -->
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Application engineer (Membership team)</u></strong></div>
+                                </p>
+                                <p>
+                                    The membership team is responsible for membership service in Rakuten. The membership team offer a royalty program to their customer. In the royalty program the members subscribe to membership service can get extra benefits as Free Rakuten TV service, discount in Rakuten Travels and others.
+                                    <ul>
+                                        Achievements:
+                                        <li>Created a log rotator service for 27 servers</li>
+                                        <li>Create batches using latest technologies Kotlin + Apache Camel</li>
+                                        <li>Create a Jenkins pipeline for release process and saved lengthy 3 days manual operation (manual writing, review and approval) to only 2 hours</li> 
+                                    </ul>
+                                </p>
+
+
+                                <!-- affiliate -->
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Application engineer (Affliate service team)</u></strong></div>
+                                </p>
+                                <p>
+                                    The Affiliate service (Rebates, Rakuten Rewards). After a successful launch in US the same concept was introduced in Japan.
+                                    <ul>
+                                        Achievements:
+                                        <li> Created a unified browser extension for IE, FF and Chrome that offers products with cheaper price. For this to develop I went to Singapore to gather information regarding how to implement. After gaining the knowledge and requirement I developed the browser extension which was proved to be the best revenue generator for the current service</li>
+                                    </ul>
+                                </p>
+                                <!-- life insurance -->
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Mobile/Application engineer (Life insurance)</u></strong></div>
+                                </p>
+                                <p>
+                                    Rakuten Life Insurance company that provides service like Medical insurance, fire insurance and amongst others. 
+                                    <ul>
+                                        Achievements:
+                                        <li>Worked as an Android engineer and managed a medical oriented application for Life Insurance customers</li>
+                                        <li>An AI assistant that can answer any complication customers had and can call or make an appointment with Doctor on their behal</li>
+                                    </ul>
+                                </p> 
+
+                                <!-- QAU -->
+                                <h6>Quaid-i-Azam university</h6>
+                                <div><span>april, 2009 ... september 2015</span></div>
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Programmer / Assistant Director</u></strong></div>
+                                </p>
+                                <p>
+                                    <ul>
+                                        Achievements:
+                                        <li>Delivering presentations about the services that our department was providing internally and externally</li>
+                                        <li>Delivered presentations to 12 colleges and successfully affiliated them with the University. This affiliation would require the University to foresee the students' Registration and Examination systems. This was a great achievement for not only me but to the whole Computer Centre Department. This initiation brought huge revenue to the University</li>
+                                        <li>Developed and maintained, examination, registration and mathematical society membership program. website: http://qau.edu.pk/</li>
+                                    </ul>
+                                </p>
+
+                                <!-- zeropoint -->
+                                <h6>Zeropoint.it</h6>
+                                <div><span>may, 2008 ... april 2009</span></div>
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Open source engineer</u></strong></div>
+                                </p>
+                                <p>
+                                    Full time web developer, creator of bagazoo.com and other open-source application using OsCOmmerce, magento, drupal, wordpress website: https://zeropoint.hr/
+                                </p>
+
+                                <!-- gladkovsoft -->
+                                <h6>Gladkovsoft</h6>
+                                <div><span>august, 2007 ... may 2008</span></div>
+                                <p>
+                                    <div class="text-uppercase"><strong><u>Software engineer</u></strong></div>
+                                </p>
+                                <p>
+                                    Fulltime developer, startup a vehicle management system from scratch. The project depicted B2B2C business model. Two team was involved in building this project one team from Russian and one from Pakistan. The application was supported in 11 languages
+                                </p>
+
+                            </div>
+                        </div>
+                    </div> <!-- experience details div -->
+
+                    <!-- Skills -->
+                    <app-page-title _ngcontent-nxs-c125="" _nghost-nxs-c65="">
+                        <div _ngcontent-nxs-c65="" class="row dashed-border">
+                            <div _ngcontent-nxs-c65="" class="col-md-12 my-3">
+                                <h4 _ngcontent-nxs-c65="">Skills</h4>
+                            </div>
+                        </div>
+                    </app-page-title>
+                    <div _ngcontent-nxs-c125="" class="ng-star-inserted">
+                        <div _ngcontent-nxs-c125="" class="row heading-row">
+                            <div _ngcontent-nxs-c125="" class="col-lg-8">
+                                <ol>
+                                    <li>Programming languages</li>
+                                    <ul>
+                                        <li>Java 8|11|17|21, Scala OOP|FP|Cats|Cats-Effect, Python</li>
+                                    </ul>
+                                    
+                                    <li>CI/CD</li>
+                                    <ul>
+                                        <li>Jenkins, CircleCI, Github actions, Code Build</li>
+                                        <li>Docker, Docker-Compose, Kubernetes</li>
+                                    </ul>
+
+                                    <li>DBs | NoSql</li>
+                                    <ul>
+                                        <li>Mysql, Postres, MongoDb</li>
+                                    </ul>
+
+
+                                    <li>Apache tools</li>
+                                    <ul>
+                                        <li>Camel, Kafka, Spark</li>
+                                    </ul>
+
+
+                                    <li>APIs</li>
+                                    <ul>
+                                        <li>PCI DSS complient Apis, JWT</li>
+                                    </ul>
+
+                                    <li>Reactive model</li>
+                                    <ul>
+                                        <li>AKKA models</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- end Skills -->
+
+                    <!-- Education -->
+                    <app-page-title _ngcontent-nxs-c125="" _nghost-nxs-c65="">
+                        <div _ngcontent-nxs-c65="" class="row dashed-border">
+                            <div _ngcontent-nxs-c65="" class="col-md-12 my-3">
+                                <h4 _ngcontent-nxs-c65="">Education</h4>
+                            </div>
+                        </div>
+                    </app-page-title>
+                    <div _ngcontent-nxs-c125="" class="ng-star-inserted">
+                        <div _ngcontent-nxs-c125="" class="row heading-row">
+                            <div _ngcontent-nxs-c125="" class="col-lg-8">
+                                <h6>2002 - 2004 : Masters in computer science</h6>
+                                <div>Majors in Programming, Networking and Databases</div>
+                                <div>Peshawar, KPK, Pakistan</div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- end Education -->
+
+                    <!-- Certification -->
+                    <app-page-title _ngcontent-nxs-c125="" _nghost-nxs-c65="">
+                        <div _ngcontent-nxs-c65="" class="row dashed-border">
+                            <div _ngcontent-nxs-c65="" class="col-md-12 my-3">
+                                <h4 _ngcontent-nxs-c65="">Certification</h4>
+                            </div>
+                        </div>
+                    </app-page-title>
+                    <div _ngcontent-nxs-c125="" class="ng-star-inserted">
+                        <div _ngcontent-nxs-c125="" class="row heading-row">
+                            <div _ngcontent-nxs-c125="" class="col-lg-8">
+                                <ul>
+                                    <li>CertifiedAzureFundamentals(seelinkedIn)</li>
+                                    <li>CertifiedSecurity,ComplianceandIdentityfundamentals(seelinkedIn)</li>
+                                    <li>BuildingScalableSystems(seelinkedIn)</li>
+                                    <li>PrinciplesofReactiveArchitecture(seelinkedIn)</li>
+                                    <li>EffectiveprogramminginScala(seelinkedIn)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- end Certification -->
+
+                    <!-- Lanugages -->
+                    <app-page-title _ngcontent-nxs-c125="" _nghost-nxs-c65="">
+                        <div _ngcontent-nxs-c65="" class="row dashed-border">
+                            <div _ngcontent-nxs-c65="" class="col-md-12 my-3">
+                                <h4 _ngcontent-nxs-c65="">Lanugages</h4>
+                            </div>
+                        </div>
+                    </app-page-title>
+                    <div _ngcontent-nxs-c125="" class="ng-star-inserted">
+                        <div _ngcontent-nxs-c125="" class="row heading-row">
+                            <div _ngcontent-nxs-c125="" class="col-lg-8">
+                                <h6>English, Hindi, Urdu, Pashto (Super Advance)</h6>
+                                <h6>Japanese, Arabic (intermediate)</h6>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- end Lanugages -->
+                </app-my-account>
+                <!---->
+            </div>
+        </main>
+        <app-footer _ngcontent-nxs-c188="" _nghost-nxs-c186="">
+            <footer _ngcontent-nxs-c186="" class="footer mt-auto py-3">
+                <div _ngcontent-nxs-c186="" class="container">
+                    <div _ngcontent-nxs-c186="" class="row">
+                        <div _ngcontent-nxs-c186="" class="col-12 col-sm-12">
+                            <div _ngcontent-nxs-c186="" class="row copyright">
+                                <div _ngcontent-nxs-c186="" class="col-6 col-sm-6">
+                                    <span _ngcontent-nxs-c186="">
+                                        <h5><a href="mailto:jharoonalishah@gmail.com"> email me !</a></h5>
+                                    </span>
+                                </div>
+
+                                <div _ngcontent-nxs-c186="" class="col-12 col-sm-6">
+                                    <span _ngcontent-nxs-c186="">@2023
+                                        Haroon Ali Shah</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </app-footer>
+    </app-root>
+</body>
+
 </html>
